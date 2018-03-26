@@ -4,7 +4,6 @@
 #
 version: 2
 jobs:
-  j1:
   build:
     docker:
       # specify the version you desire here
@@ -51,6 +50,6 @@ after_success:
 workflows:
 version : 2
 jobs:
--j1
+-build
 -codecov
 
