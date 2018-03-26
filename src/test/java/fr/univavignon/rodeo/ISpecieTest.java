@@ -8,7 +8,7 @@ import fr.univavignon.rodeo.api.ISpecie;
 
 public class ISpecieTest {
 
-	public ISpecie getSpecie(){
+	public static ISpecie getSpecie(){
 		return mock(ISpecie.class);
 	}
 	

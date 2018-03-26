@@ -8,7 +8,7 @@ import fr.univavignon.rodeo.api.IAnimal;
 
 public class IAnimalTest{
 		
-	public IAnimal getAnimal(){
+	public static IAnimal getAnimal(){
 		return mock(IAnimal.class);
 	}
 	

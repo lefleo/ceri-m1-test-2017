@@ -18,7 +18,7 @@ public class IEnvironmentProviderTest {
 		assertEquals(new java.util.ArrayList<IEnvironment>() , EP.getAvailableEnvironments());
 	}
 	
-	@Test
+	@Test(expected=IllegalArgumentException.class)
 	public void testEnvironmentName(){
 		IEnvironmentProvider EP = getEP();
 		EP.getEnvironment(null);
