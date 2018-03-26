@@ -27,7 +27,7 @@ public class IAnimalTest{
 	@Test
 	public void TestEndangered(){
 		IAnimal A = getAnimal();
-		assertEquals(0,A.isEndangered());
+		assertEquals(false,A.isEndangered());
 	}
 	
 	@Test
