@@ -1,5 +1,5 @@
 import java.Mockito.*;
-import IAnimal;
+import fr.univavignon.rodeo.IAnimal;
 public final class essai {
 
 @Mock private IAnimal animalMock;
