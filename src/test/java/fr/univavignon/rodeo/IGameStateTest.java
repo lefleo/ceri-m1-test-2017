@@ -25,7 +25,7 @@ public class IGameStateTest {
 	public void testSpecieLevel(){
 		IGameState GS = getGS();
 		ISpecie S = ISpecieTest.getSpecie();
-		assertEquals(SpecieLevel.NOVICE,GS.getSpecieLevel(S));
+		assertEquals(null,GS.getSpecieLevel(S));
 	}
 	
 	@Test
