@@ -22,7 +22,6 @@ public class IGameStateProviderTest {
 	@Test
 	public void testLoad(){
 		IGameStateProvider GSP = getGSP();
-		IGameState GS = IGameStateTest.getGS();
-		assertEquals(GS,GSP.get(null));
+		assertEquals(null,GSP.get(null));
 	}
 }
