@@ -19,9 +19,10 @@ public class IGameStateProviderTest {
 		GSP.save(GS);
 	}
 	
-	@Test(expected=IllegalArgumentException.class)
+	@Test
 	public void testLoad(){
 		IGameStateProvider GSP = getGSP();
-		GSP.get(null);
+		IGameState GS = IGameStateTest.getGS();
+		assertEquals(GS,GSP.get(null));
 	}
 }
