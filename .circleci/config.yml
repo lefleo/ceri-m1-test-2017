@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: oracle-jdk8
+    steps:
+      - checkout
+      - build
+      - test goal on maven
