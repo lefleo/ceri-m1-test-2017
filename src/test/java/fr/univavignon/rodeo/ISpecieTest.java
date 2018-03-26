@@ -21,6 +21,6 @@ public class ISpecieTest {
 	@Test
 	public void TestAnimals(){
 		ISpecie S=getSpecie();	
-		assertEquals(null,S.getAnimals());
+		assertEquals(new java.util.ArrayList<IAnimal>(),S.getAnimals());
 	}
 }
