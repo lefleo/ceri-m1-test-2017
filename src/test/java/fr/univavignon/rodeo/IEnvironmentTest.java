@@ -12,13 +12,13 @@ public class IEnvironmentTest {
 	}
 	
 	@Test
-	public void TestAreas(){
+	public void testAreas(){
 		IEnvironment E = getEnvironment();
 		assertEquals(0,E.getAreas());
 	}
 	
 	@Test
-	public void TestSpecies(){
+	public void testSpecies(){
 		IEnvironment E = getEnvironment();
 		assertEquals(new java.util.ArrayList<ISpecie>() , E.getSpecies());
 	}

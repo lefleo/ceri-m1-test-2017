@@ -13,25 +13,25 @@ public class IAnimalTest{
 	}
 	
 	@Test
-	public void TestXP(){
+	public void testXP(){
 		IAnimal A = getAnimal();
 		assertEquals(0,A.getXP());
 	}
 	
 	@Test
-	public void TestSecret(){
+	public void testSecret(){
 		IAnimal A = getAnimal();
 		assertEquals(false,A.isSecret());
 	}
 	
 	@Test
-	public void TestEndangered(){
+	public void testEndangered(){
 		IAnimal A = getAnimal();
 		assertEquals(false,A.isEndangered());
 	}
 	
 	@Test
-	public void TestBoss(){
+	public void testBoss(){
 		IAnimal A = getAnimal();
 		assertEquals(false,A.isBoss());
 	}

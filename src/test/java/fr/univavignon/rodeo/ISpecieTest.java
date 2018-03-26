@@ -13,13 +13,13 @@ public class ISpecieTest {
 	}
 	
 	@Test
-	public void TestArea(){
+	public void testArea(){
 		ISpecie S=getSpecie();
 		assertEquals(0,S.getArea());
 	}
 	
 	@Test
-	public void TestAnimals(){
+	public void testAnimals(){
 		ISpecie S=getSpecie();	
 		assertEquals(new java.util.ArrayList<IAnimal>(),S.getAnimals());
 	}
