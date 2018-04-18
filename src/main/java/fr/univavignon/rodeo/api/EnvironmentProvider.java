@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class EnvironmentProvider implements IEnvironmentProvider{
 
-	List<Environment> environments;
+	public List<Environment> environments;
 	
 	public EnvironmentProvider(){
 		try {
@@ -29,7 +29,7 @@ public class EnvironmentProvider implements IEnvironmentProvider{
 				}else{
 					if(data.length>11){
 						String spc=data[0];
-						Specie esp=new Specie(spc,i,new ArrayList<IAnimal>());
+						Specie esp=new Specie(spc,i%9,new ArrayList<IAnimal>());
 						for(int j=1;j<11;j++){
 							if(!data[j].equals("-")){
 								esp.animals.add(new Animal(data[j],false,false,false));
