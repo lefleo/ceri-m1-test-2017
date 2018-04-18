@@ -19,7 +19,8 @@
 <version>1.9.5</version>
 </dependency>
 </dependencies>
-<reporting>
+<build>
+<sourceDirectory>src/main/java</sourceDirectory>
 <plugins>
 <plugin>
 <groupId>org.codehaus.mojo</groupId>
@@ -34,5 +35,5 @@
 </configuration>
 </plugin>
 </plugins>
-</reporting>
+</build>
 </project>
