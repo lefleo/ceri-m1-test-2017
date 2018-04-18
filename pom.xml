@@ -19,6 +19,7 @@
 <version>1.9.5</version>
 </dependency>
 </dependencies>
+<reporting>
 <plugin>
 <groupId>org.codehaus.mojo</groupId>
 <artifactId>cobertura-maven-plugin</artifactId>
@@ -31,4 +32,5 @@
 <check />
 </configuration>
 </plugin>
+</reporting>
 </project>
