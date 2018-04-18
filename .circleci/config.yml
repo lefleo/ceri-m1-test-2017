@@ -39,10 +39,9 @@ jobs:
         
       # run tests!
       - run: mvn integration-test
-      - codecov :
-          language: java
-          script: mvn cobertura:cobertura
-          after_succes: bash <(curl -s https://codecov.io/bash)
+      - language: java
+      - script: "mvn cobertura:cobertura"
+      - after_succes: bash <(curl -s https://codecov.io/bash)
  
 
 
