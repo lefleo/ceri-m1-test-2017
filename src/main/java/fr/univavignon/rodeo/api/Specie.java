@@ -6,7 +6,7 @@ public class Specie implements ISpecie {
 
 	public String name;
 	public int Area;
-	public List<Animal> animals;
+	public List<IAnimal> animals;
 	public SpecieLevel level;
 	
 	public Specie(){
@@ -16,7 +16,7 @@ public class Specie implements ISpecie {
 		this.level=SpecieLevel.NOVICE;
 	}
 	
-	public Specie(String name, int area, List<Animal> animals){
+	public Specie(String name, int area, List<IAnimal> animals){
 		this.name=name;
 		this.Area=area;
 		this.animals=animals;
@@ -31,7 +31,7 @@ public class Specie implements ISpecie {
 		return this.Area;
 	}
 	
-	public List<Animal> getAnimals(){
+	public List<IAnimal> getAnimals(){
 		return this.animals;
 	}
 }

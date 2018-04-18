@@ -23,13 +23,13 @@ public class EnvironmentProvider implements IEnvironmentProvider{
 				if((i%8==1 && i<44)|| i==50){
 					String name=data[0];
 					int nb=7;
-					Environment e = new Environment(name,nb,new ArrayList<Specie>());
+					Environment e = new Environment(name,nb,new ArrayList<ISpecie>());
 					this.environments.add(e);
 					env++;
 				}else{
 					if(data.length>11){
 						String spc=data[0];
-						Specie esp=new Specie(spc,i,new ArrayList<Animal>());
+						Specie esp=new Specie(spc,i,new ArrayList<IAnimal>());
 						for(int j=1;j<11;j++){
 							if(!data[j].equals("-")){
 								esp.animals.add(new Animal(data[j],false,false,false));

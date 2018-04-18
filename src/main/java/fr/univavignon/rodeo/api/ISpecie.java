@@ -22,6 +22,6 @@ public interface ISpecie extends INamedObject {
 	 * 
 	 * @return List of available animal for this specie.
 	 */
-	List<Animal> getAnimals();
+	List<IAnimal> getAnimals();
 
 }

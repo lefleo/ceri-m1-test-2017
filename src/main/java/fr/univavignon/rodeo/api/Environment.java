@@ -6,7 +6,7 @@ public class Environment implements IEnvironment {
 
 	public String name;
 	public int nbAreas;
-	public List<Specie> species;
+	public List<ISpecie> species;
 	
 	public Environment(){
 		this.name="";
@@ -14,7 +14,7 @@ public class Environment implements IEnvironment {
 		this.species=null;
 	}
 	
-	public Environment(String n, int nb, List<Specie> spc){
+	public Environment(String n, int nb, List<ISpecie> spc){
 		this.name=n;
 		this.nbAreas=nb;
 		this.species=spc;
@@ -28,7 +28,7 @@ public class Environment implements IEnvironment {
 		return this.nbAreas;
 	}
 	
-	public List<Specie> getSpecies(){
+	public List<ISpecie> getSpecies(){
 		return this.species;
 	}
 	
