@@ -24,7 +24,7 @@ public interface IGameState extends INamedObject {
 	 * @throws IllegalArgumentException If the given <tt>animal</tt> is <tt>null</tt>.
 	 * @throws IllegalStateException If the given <tt>animal</tt> can not be found in current areas.
 	 */
-	void catchAnimal(IAnimal animal) throws IllegalArgumentException, IllegalStateException;
+	void catchAnimal(Animal animal) throws IllegalArgumentException, IllegalStateException;
 
 	/**
 	 * Retrieves the level of the given specie.
@@ -33,7 +33,7 @@ public interface IGameState extends INamedObject {
 	 * @return Current specie level.
 	 * @throws IllegalArgumentException If the given <tt>specie</tt> is <tt>null</tt>
 	 */
-	SpecieLevel getSpecieLevel(ISpecie specie) throws IllegalArgumentException;
+	SpecieLevel getSpecieLevel(Specie specie) throws IllegalArgumentException;
 
 	/**
 	 * Computes and returns the game progression percentage.
