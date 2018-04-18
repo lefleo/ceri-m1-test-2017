@@ -47,7 +47,7 @@ public class Tests {
 	@Test
 	public void testEndangered(){
 		assertEquals(false,A.isEndangered());
-		assertEquals(false,B.isEndangered());
+		assertEquals(true,B.isEndangered());
 	}
 	
 	@Test
@@ -69,7 +69,7 @@ public class Tests {
 	
 	@Test
 	public void testArea(){
-		assertEquals(1,S.getArea());
+		assertEquals(2,S.getArea());
 	}
 	
 	@Test
