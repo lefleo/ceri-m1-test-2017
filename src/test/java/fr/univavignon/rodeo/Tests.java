@@ -40,19 +40,19 @@ public class Tests {
 	
 	@Test
 	public void testSecret(){
-		assertEquals(true,A.isSecret());
+		assertEquals(false,A.isSecret());
 		assertEquals(false,B.isSecret());
 	}
 	
 	@Test
 	public void testEndangered(){
-		assertEquals(true,A.isEndangered());
+		assertEquals(false,A.isEndangered());
 		assertEquals(false,B.isEndangered());
 	}
 	
 	@Test
 	public void testBoss(){
-		assertEquals(true,A.isBoss());
+		assertEquals(false,A.isBoss());
 		assertEquals(false,B.isBoss());
 	}
 	
