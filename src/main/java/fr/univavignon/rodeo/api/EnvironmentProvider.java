@@ -14,7 +14,7 @@ public class EnvironmentProvider implements IEnvironmentProvider{
 	public EnvironmentProvider(){
 		try {
 			this.environments=new ArrayList<Environment>();
-			BufferedReader br = new BufferedReader(new FileReader("docs/Rodeo Stampede Animals - Animal List.csv"));
+			BufferedReader br = new BufferedReader(new FileReader("./docs/Rodeo Stampede Animals - Animal List.csv"));
 			String s=br.readLine();
 			int i=1;
 			int env=-1;
