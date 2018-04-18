@@ -9,11 +9,11 @@ import fr.univavignon.rodeo.api.ISpecie;
 
 public class ISpecieTest {
 
-	@Mock public ISpecie S;
+	@Mock public static ISpecie S;
 	
 	@BeforeClass
-	public void getSpecie(){
-		this.S=mock(ISpecie.class);
+	public static void getSpecie(){
+		S=mock(ISpecie.class);
 	}
 	
 	@Test

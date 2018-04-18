@@ -9,11 +9,11 @@ import fr.univavignon.rodeo.api.IGameStateProvider;
 
 public class IGameStateProviderTest {
 
-	@Mock public IGameStateProvider GSP;
+	@Mock public static IGameStateProvider GSP;
 	
 	@BeforeClass
-	public void getGSP(){
-		this.GSP=mock(IGameStateProvider.class);
+	public static void getGSP(){
+		GSP=mock(IGameStateProvider.class);
 	}
 	
 	@Test

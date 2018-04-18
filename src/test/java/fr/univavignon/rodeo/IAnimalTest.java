@@ -9,11 +9,11 @@ import fr.univavignon.rodeo.api.IAnimal;
 
 public class IAnimalTest{
 		
-	@Mock public IAnimal A;
+	@Mock public static IAnimal A;
 	
 	@BeforeClass
-	public void getAnimal(){
-		this.A=mock(IAnimal.class);
+	public static void getAnimal(){
+		A=mock(IAnimal.class);
 	}
 	
 	@Test

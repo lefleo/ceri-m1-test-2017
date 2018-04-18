@@ -9,11 +9,11 @@ import fr.univavignon.rodeo.api.ISpecie;
 
 public class IEnvironmentTest {
 	
-	@Mock public IEnvironment E;
+	@Mock public static IEnvironment E;
 	
 	@BeforeClass
-	public void getEnvironment(){
-		this.E=mock(IEnvironment.class);
+	public static void getEnvironment(){
+		E=mock(IEnvironment.class);
 	}
 	
 	@Test

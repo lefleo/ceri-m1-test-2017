@@ -10,11 +10,11 @@ import fr.univavignon.rodeo.api.IEnvironmentProvider;
 
 public class IEnvironmentProviderTest {
 
-	@Mock public IEnvironmentProvider EP;
+	@Mock public static IEnvironmentProvider EP;
 	
 	@BeforeClass
-	public void getEP(){
-		this.EP=mock(IEnvironmentProvider.class);
+	public static void getEP(){
+		EP=mock(IEnvironmentProvider.class);
 	}
 	
 	@Test

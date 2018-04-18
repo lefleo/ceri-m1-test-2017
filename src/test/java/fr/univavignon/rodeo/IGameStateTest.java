@@ -11,11 +11,11 @@ import fr.univavignon.rodeo.api.ISpecie;
 
 public class IGameStateTest {
 
-	@Mock public IGameState GS;
+	@Mock public static IGameState GS;
 	
 	@BeforeClass
-	public  void getGS(){
-		this.GS = mock(IGameState.class);
+	public static void getGS(){
+		GS = mock(IGameState.class);
 	}
 	
 	@Test
