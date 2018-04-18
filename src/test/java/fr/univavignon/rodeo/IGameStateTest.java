@@ -3,6 +3,7 @@ package fr.univavignon.rodeo;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 import org.junit.*;
+import org.mockito.Mock;
 
 import fr.univavignon.rodeo.api.IAnimal;
 import fr.univavignon.rodeo.api.IGameState;
@@ -10,33 +11,32 @@ import fr.univavignon.rodeo.api.ISpecie;
 
 public class IGameStateTest {
 
-	public static IGameState getGS(){
-		return mock(IGameState.class);
+	@Mock public IGameState GS;
+	
+	@BeforeClass
+	public  void getGS(){
+		this.GS = mock(IGameState.class);
 	}
 	
 	@Test
 	public void testProgression(){
-		IGameState GS = getGS();
 		assertEquals(0,GS.getProgression());
 	}
 	
-	/*@Test
+	@Test
 	public void testSpecieLevel(){
-		IGameState GS = getGS();
-		ISpecie S = ISpecieTest.getSpecie();
+		ISpecie S = mock(ISpecie.class);
 		assertEquals(null,GS.getSpecieLevel(S));
-	}*/
+	}
 	
 	@Test
 	public void testExplore(){
-		IGameState GS = getGS();
 		GS.exploreArea();
 	}
 	
-	/*@Test
+	@Test
 	public void testCapture(){
-		IGameState GS = getGS();
-		IAnimal A = IAnimalTest.getAnimal();
+		IAnimal A = mock(IAnimal.class);
 		GS.catchAnimal(A);
-	}*/
+	}
 }

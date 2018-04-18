@@ -2,26 +2,28 @@ package fr.univavignon.rodeo;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 import org.junit.*;
+import org.mockito.Mock;
 
 import fr.univavignon.rodeo.api.IGameState;
 import fr.univavignon.rodeo.api.IGameStateProvider;
 
 public class IGameStateProviderTest {
 
-	public IGameStateProvider getGSP(){
-		return mock(IGameStateProvider.class);
+	@Mock public IGameStateProvider GSP;
+	
+	@BeforeClass
+	public void getGSP(){
+		this.GSP=mock(IGameStateProvider.class);
 	}
 	
 	@Test
 	public void testSave(){
-		IGameStateProvider GSP = getGSP();
-		IGameState GS = IGameStateTest.getGS();
+		IGameState GS = mock(IGameState.class);
 		GSP.save(GS);
 	}
 	
 	@Test
 	public void testLoad(){
-		IGameStateProvider GSP = getGSP();
 		assertEquals(null,GSP.get(null));
 	}
 }
