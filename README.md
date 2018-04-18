@@ -4,7 +4,6 @@
 
 [![codecov](https://codecov.io/gh/lefleo/ceri-m1-test-2017/branch/master/graph/badge.svg)](https://codecov.io/gh/lefleo/ceri-m1-test-2017)
 
-
 ## Resources
 
 ### Cours
