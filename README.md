@@ -5,6 +5,6 @@
 [![codecov](https://codecov.io/gh/lefleo/ceri-m1-test-2017/branch/master/graph/badge.svg)](https://codecov.io/gh/lefleo/ceri-m1-test-2017)
 
 ## Repository
-[![nom]Léo FLEURY
+Léo FLEURY
 
-[![groupe]Master ILSEN - Groupe classique
+Master ILSEN - Groupe classique
